@@ -67,12 +67,7 @@
       <p>You have completed the quiz.</p>
     </div>
     
-   
-  </body>
-</html>
-
-
-    <script>
+       <script>
       // Set correct answers
 const correctAnswers = {
   question1: 'A',
@@ -108,3 +103,6 @@ next2Button.addEventListener('click', function(event) {
 });
 
 </script>
+
+  </body>
+</html>
