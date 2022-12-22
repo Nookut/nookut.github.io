@@ -33,6 +33,43 @@
       <br>
       <button id="next1">Next</button>
     </div>
+    
+    <script>
+      // Set correct answers
+const correctAnswers = {
+  question1: 'A',
+  question2: 'C'
+};
+
+// Get reference to buttons and result div
+const next1Button = document.getElementById('next1');
+const next2Button = document.getElementById('next2');
+const resultDiv = document.getElementById('result');
+
+// Add event listeners to buttons
+next1Button.addEventListener('click', function(event) {
+  event.preventDefault();
+  // Check if correct answer was selected
+  const answer1 = document.querySelector('input[name="question1"]:checked');
+  if (answer1 && answer1.value === correctAnswers.question1) {
+    // Show second question
+    document.getElementById('question1').style.display = 'none';
+    document.getElementById('question2').style.display = 'block';
+  }
+});
+
+next2Button.addEventListener('click', function(event) {
+  event.preventDefault();
+  // Check if correct answer was selected
+  const answer2 = document.querySelector('input[name="question2"]:checked');
+  if (answer2 && answer2.value === correctAnswers.question2) {
+    // Show result div
+    document.getElementById('question2').style.display = 'none';
+    resultDiv.style.display = 'block';
+  }
+});
+
+</script>
 
     <!-- Second question -->
     <div id="question2" style="display:none">
