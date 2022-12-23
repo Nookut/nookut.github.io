@@ -1,34 +1,34 @@
-# nookut.github.io
+
 <html>
   <head>
     <title>Quiz</title>
   </head>
   <body>
-    <h1>Quiz Title</h1>
-    <p>Quiz instructions</p>
+    <h1>Nallys Christmas Quiz</h1>
+    <p>To get to your gift you must answer each of my questions correctly.</p>
 
     <!-- First question -->
     <div id="question1">
       <h2>Question 1</h2>
-      <p>Question text</p>
+      <p>If you were Lewis Hamilton, who would be the first person to thank upon receiving your gift?</p>
       <label>
         <input type="radio" name="question1" value="A" required>
-        Answer A
+        God
       </label>
       <br>
       <label>
         <input type="radio" name="question1" value="B">
-        Answer B
+        The fans
       </label>
       <br>
       <label>
         <input type="radio" name="question1" value="C">
-        Answer C
+        Your sponsors
       </label>
       <br>
       <label>
         <input type="radio" name="question1" value="D">
-        Answer D
+        Your parents
       </label>
       <br>
       <button id="next1">Next</button>
@@ -37,28 +37,83 @@
     <!-- Second question -->
     <div id="question2" style="display:none">
       <h2>Question 2</h2>
-      <p>Question text</p>
+      <p>Why does Abby Lee Miller require a wheelchair?</p>
       <label>
         <input type="radio" name="question2" value="A" required>
-        Answer A
+        Lymphoma
       </label>
       <br>
       <label>
         <input type="radio" name="question2" value="B">
-        Answer B
+        Type 2 diabetes
       </label>
       <br>
       <label>
         <input type="radio" name="question2" value="C">
-        Answer C
+        Arthritis
       </label>
       <br>
       <label>
         <input type="radio" name="question2" value="D">
-        Answer D
+        Degenerative disc disease
       </label>
       <br>
       <button id="next2">Next</button>
+    </div>
+    
+    
+     <!-- Third question -->
+    <div id="question3" style="display:none">
+      <h2>Question 3</h2>
+      <p>Which two Greek Gods were twins?</p>
+      <label>
+        <input type="radio" name="question3" value="A" required>
+        Zeus and Hades
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="question3" value="B">
+        Zeus and Poseidon
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="question3" value="C">
+        Artemis and Apollo
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="question3" value="D">
+        Hephaestus and Ares
+      </label>
+      <br>
+      <button id="next3">Next</button>
+    </div>
+    
+         <!-- Fourth question -->
+    <div id="question4" style="display:none">
+      <h2>Question 4</h2>
+      <p>Which two Greek Gods were twins?</p>
+      <label>
+        <input type="radio" name="question4" value="A" required>
+        Zeus and Hades
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="question4" value="B">
+        Zeus and Poseidon
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="question4" value="C">
+        Artemis and Apollo
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="question4" value="D">
+        Hephaestus and Ares
+      </label>
+      <br>
+      <button id="next3">Next</button>
     </div>
 
     <!-- Result -->
@@ -70,13 +125,19 @@
        <script>
       // Set correct answers
 const correctAnswers = {
-  question1: 'A',
-  question2: 'C'
+  question1: 'B',
+  question2: 'A'
+  question3: 'C'
+  question4: 'C'
+  question5: 'C'       
 };
 
 // Get reference to buttons and result div
 const next1Button = document.getElementById('next1');
 const next2Button = document.getElementById('next2');
+const next3Button = document.getElementById('next3');
+const next4Button = document.getElementById('next4');
+const next5Button = document.getElementById('next5');         
 const resultDiv = document.getElementById('result');
 
 // Add event listeners to buttons
@@ -102,6 +163,39 @@ next2Button.addEventListener('click', function(event) {
   }
 });
 
+         next3Button.addEventListener('click', function(event) {
+  event.preventDefault();
+  // Check if correct answer was selected
+  const answer3 = document.querySelector('input[name="question3"]:checked');
+  if (answer3 && answer3.value === correctAnswers.question3) {
+    // Show result div
+    document.getElementById('question3').style.display = 'none';
+    resultDiv.style.display = 'block';
+  }
+});
+         
+         next4Button.addEventListener('click', function(event) {
+  event.preventDefault();
+  // Check if correct answer was selected
+  const answer4 = document.querySelector('input[name="question4"]:checked');
+  if (answer4 && answer4.value === correctAnswers.question4) {
+    // Show result div
+    document.getElementById('question4').style.display = 'none';
+    resultDiv.style.display = 'block';
+  }
+});
+         
+         next5Button.addEventListener('click', function(event) {
+  event.preventDefault();
+  // Check if correct answer was selected
+  const answer5 = document.querySelector('input[name="question5"]:checked');
+  if (answer5 && answer5.value === correctAnswers.question5) {
+    // Show result div
+    document.getElementById('question5').style.display = 'none';
+    resultDiv.style.display = 'block';
+  }
+});
+         
 </script>
 
   </body>
