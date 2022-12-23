@@ -113,7 +113,35 @@
         Hephaestus and Ares
       </label>
       <br>
-      <button id="next3">Next</button>
+      <button id="next4">Next</button>
+    </div>
+    
+    
+         <!-- Fifth question -->
+    <div id="question5" style="display:none">
+      <h2>Question 5</h2>
+      <p>Which two Greek Gods were twins?</p>
+      <label>
+        <input type="radio" name="question5" value="A" required>
+        Zeus and Hades
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="question5" value="B">
+        Zeus and Poseidon
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="question5" value="C">
+        Artemis and Apollo
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="question5" value="D">
+        Hephaestus and Ares
+      </label>
+      <br>
+      <button id="next5">Next</button>
     </div>
 
     <!-- Result -->
@@ -152,40 +180,29 @@ next1Button.addEventListener('click', function(event) {
   }
 });
 
-next2Button.addEventListener('click', function(event) {
+         next2Button.addEventListener('click', function(event) {
   event.preventDefault();
   // Check if correct answer was selected
   const answer2 = document.querySelector('input[name="question2"]:checked');
   if (answer2 && answer2.value === correctAnswers.question2) {
-    // Show result div
+    // Show third question
     document.getElementById('question2').style.display = 'none';
-    resultDiv.style.display = 'block';
+    document.getElementById('question3').style.display = 'block';
   }
 });
-
-         next3Button.addEventListener('click', function(event) {
+         
+              next3Button.addEventListener('click', function(event) {
   event.preventDefault();
   // Check if correct answer was selected
   const answer3 = document.querySelector('input[name="question3"]:checked');
   if (answer3 && answer3.value === correctAnswers.question3) {
-    // Show result div
+    // Show third question
     document.getElementById('question3').style.display = 'none';
-    resultDiv.style.display = 'block';
+    document.getElementById('question4').style.display = 'block';
   }
 });
          
-         next4Button.addEventListener('click', function(event) {
-  event.preventDefault();
-  // Check if correct answer was selected
-  const answer4 = document.querySelector('input[name="question4"]:checked');
-  if (answer4 && answer4.value === correctAnswers.question4) {
-    // Show result div
-    document.getElementById('question4').style.display = 'none';
-    resultDiv.style.display = 'block';
-  }
-});
-         
-         next5Button.addEventListener('click', function(event) {
+next5Button.addEventListener('click', function(event) {
   event.preventDefault();
   // Check if correct answer was selected
   const answer5 = document.querySelector('input[name="question5"]:checked');
@@ -195,7 +212,8 @@ next2Button.addEventListener('click', function(event) {
     resultDiv.style.display = 'block';
   }
 });
-         
+
+              
 </script>
 
   </body>
