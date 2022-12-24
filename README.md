@@ -10,8 +10,7 @@
     <!-- First question -->
     <div id="question1">
       <h2>Question 1</h2>
-      ![lewis](Lewis.jpeg)
-      
+   
       <p>If you were Lewis Hamilton, who would be the first person to thank upon receiving your gift?</p>
       <label>
         <input type="radio" name="question1" value="A" required>
@@ -38,7 +37,7 @@
 
     <!-- Second question -->
     <div id="question2" style="display:none">
-      <h2>Question 2</h2> <img src=https://imagez.tmz.com/image/c8/o/2018/07/31/c88c7cfba58a5553afd8ee3f29d08aad.jpg alt="A cat" width="200" height="200"> 
+      <h2>Question 2</h2>  
       <p>Why does Abby Lee Miller require a wheelchair?</p>
       <label>
         <input type="radio" name="question2" value="A" required>
@@ -66,7 +65,7 @@
     
      <!-- Third question -->
     <div id="question3" style="display:none">
-      <h2>Question 3</h2> <img src=https://cdn.thecollector.com/wp-content/uploads/2020/06/giulio-romano-olympian-gods-wall-painting-1.jpg alt="A cat" width="200" height="200"> 
+      <h2>Question 3</h2> 
       <p>Which two Greek Gods were twins?</p>
       <label>
         <input type="radio" name="question3" value="A" required>
@@ -93,7 +92,7 @@
     
          <!-- Fourth question -->
     <div id="question4" style="display:none">
-      <h2>Question 4</h2> <img src=https://www.provincialsign.com/wp-content/uploads/2017/11/canadian-flag-animated-gif-81.gif alt="A cat" width="200" height="200"> 
+      <h2>Question 4</h2>  
       <p>What was the first National park in Canada?</p>
       <label>
         <input type="radio" name="question4" value="A" required>
@@ -120,7 +119,7 @@
     
          <!-- Fifth question -->
     <div id="question5" style="display:none">
-      <h2>Question 5</h2> <img src=https://i.insider.com/5c23e92801c0ea168e5a40b4?width=1000&format=jpeg&auto=webp alt="A cat" width="200" height="200"> 
+      <h2>Question 5</h2> 
       <p>How long were Kim K and Kris Humphries married for?</p>
       <label>
         <input type="radio" name="question5" value="A" required>
@@ -147,26 +146,26 @@
     
         <!-- sixth question -->
     <div id="question6" style="display:none">
-      <h2>Question 6</h2> <img src=https://i.insider.com/5c23e92801c0ea168e5a40b4?width=1000&format=jpeg&auto=webp alt="A cat" width="200" height="200"> 
-      <p>Which two Greek Gods were twins?</p>
+      <h2>Question 6</h2> 
+      <p>What song did James Charles sing while suspended over a canyon?</p>
       <label>
         <input type="radio" name="question6" value="A" required>
-        Zeus and Hades
+        God is a Woman - Ariana Grande
       </label>
       <br>
       <label>
         <input type="radio" name="question6" value="B">
-        Zeus and Poseidon
+        I Will Always Love You - Whitney Houston
       </label>
       <br>
       <label>
         <input type="radio" name="question6" value="C">
-        Artemis and Apollo
+        Hallelujah - Leonard Cohen
       </label>
       <br>
       <label>
         <input type="radio" name="question6" value="D">
-        Hephaestus and Ares
+        Stay With Me - Sam Smith
       </label>
       <br>
       <button id="next6">Next</button>
@@ -175,25 +174,25 @@
         <!-- seventh question -->
     <div id="question7" style="display:none">
       <h2>Question 7</h2>
-      <p>Which two Greek Gods were twins?</p>
+      <p>In Sims 4, how many Sims can be in a household??</p>
       <label>
         <input type="radio" name="question7" value="A" required>
-        Zeus and Hades
+        5
       </label>
       <br>
       <label>
         <input type="radio" name="question7" value="B">
-        Zeus and Poseidon
+        8
       </label>
       <br>
       <label>
         <input type="radio" name="question7" value="C">
-        Artemis and Apollo
+        10
       </label>
       <br>
       <label>
         <input type="radio" name="question7" value="D">
-        Hephaestus and Ares
+        6
       </label>
       <br>
       <button id="next7">Next</button>
@@ -202,25 +201,25 @@
         <!-- eigth question -->
     <div id="question8" style="display:none">
       <h2>Question 8</h2>
-      <p>Which two Greek Gods were twins?</p>
+      <p>How many Kilometers do a pair of running shoes last on average?</p>
       <label>
         <input type="radio" name="question8" value="A" required>
-        Zeus and Hades
+        640
       </label>
       <br>
       <label>
         <input type="radio" name="question8" value="B">
-        Zeus and Poseidon
+        1,000
       </label>
       <br>
       <label>
         <input type="radio" name="question8" value="C">
-        Artemis and Apollo
+        5,000
       </label>
       <br>
       <label>
         <input type="radio" name="question8" value="D">
-        Hephaestus and Ares
+        10,000
       </label>
       <br>
       <button id="next8">Next</button>
@@ -242,8 +241,8 @@ const correctAnswers = {
   question4: 'D',
   question5: 'D',
   question6: 'C',
-  question7: 'C',
-  question8: 'C'
+  question7: 'B',
+  question8: 'A'
 };
 
 // Get reference to buttons and result div
