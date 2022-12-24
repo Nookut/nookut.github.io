@@ -9,7 +9,7 @@
 
     <!-- First question -->
     <div id="question1">
-      <h2>Question 1</h2> <img src=https://i.imgur.com/rajXMvM.jpeg alt="A cat" width="200" height="200">
+      <h2>Question 1</h2> <img src=Lewis.jpeg alt="A cat" width="200" height="200">
       <p>If you were Lewis Hamilton, who would be the first person to thank upon receiving your gift?</p>
       <label>
         <input type="radio" name="question1" value="A" required>
