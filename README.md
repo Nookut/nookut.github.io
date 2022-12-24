@@ -9,10 +9,9 @@
 
     <!-- First question -->
     <div id="question1">
-      <h2>Question 1</h2> <img src=/docs/images/Lewis.jpeg alt="A cat" width="200" height="200">
-      <img src=/nookut.github.io/docs/images/Lewis.jpeg alt="A cat" width="200" height="200">
-      (/nookut.github.io/docs/images/Lewis.jpeg)
-      ![alt text](https://i.imgur.com/rajXMvM.jpeg)
+      <h2>Question 1</h2>
+      ![lewis](Lewis.jpeg)
+      
       <p>If you were Lewis Hamilton, who would be the first person to thank upon receiving your gift?</p>
       <label>
         <input type="radio" name="question1" value="A" required>
