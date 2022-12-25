@@ -57,7 +57,7 @@
       <br>
       <label>
         <input type="radio" name="question2" value="D">
-        Degenerative disc disease
+        Stroke complications
       </label>
       <br>
       <button id="next2">Next</button>
