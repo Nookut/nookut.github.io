@@ -9,7 +9,8 @@
 
     <!-- First question -->
     <div id="question1">
-      <h2>Question 1</h2>
+      <h2>Question 1</h2> <img src="Lewis.png" alt="lasagna">
+      
    
       <p>If you were Lewis Hamilton, who would be the first person to thank upon receiving your gift?</p>
       <label>
@@ -174,7 +175,7 @@
         <!-- seventh question -->
     <div id="question7" style="display:none">
       <h2>Question 7</h2>
-      <p>In Sims 4, how many Sims can be in a household??</p>
+      <p>In Sims 4, how many Sims can be in a household?</p>
       <label>
         <input type="radio" name="question7" value="A" required>
         5
