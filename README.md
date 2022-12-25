@@ -229,7 +229,7 @@
     <!-- Result -->
     <div id="result" style="display:none">
       <h2>Congratulations!</h2>
-      <p>You have completed the quiz. Your prize is... $50 towards a pair of running shoes!</p>
+      <p>You have completed the quiz! Your prize is $50 towards a pair of running shoes because you passed 640km a while ago.</p>
        
     </div>
     
